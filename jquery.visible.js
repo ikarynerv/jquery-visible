@@ -19,7 +19,7 @@
         var $t        = this.length > 1 ? this.eq(0) : this,
             t         = $t.get(0),
             vpWidth   = $w.width(),
-            vpHeight  = $w.height(),
+            vpHeight  = window.innerHeight ? window.innerHeight : $w.height(), 
             direction = (direction) ? direction : 'both',
             clientSize = hidden === true ? t.offsetWidth * t.offsetHeight : true;
 
